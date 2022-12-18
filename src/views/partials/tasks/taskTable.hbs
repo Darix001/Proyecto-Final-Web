@@ -1,0 +1,35 @@
+<table> 
+    <thead>
+        <tr>
+            <th>N.</th>
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>Director</th>
+            <th>Actores</th>
+            <th>año</th>
+            <th>Reseña</th>
+            <th>Link</th>
+            <th>Operaciones</th>
+            
+        </tr>
+    </thead>
+    <tbody> 
+        {{#each trailers}}
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{_id}}</td>
+                <td>{{titulo}}</td>
+                <td>{{director}}</td>
+                <td>{{actores}}</td>
+                <td>{{año}}</td>   
+                <td>{{reseña}}</td>
+                <td>{{link_del_trailer}}</td>
+                <td>
+                   <a href="/delete/{{_id}}">Eliminar</a>
+                    <a href="/edit/{{_id}}">Actualizar</a>
+                </td>
+            </tr>
+
+        {{/each}}
+    </tbody>
+</table>

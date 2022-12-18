@@ -1,0 +1,43 @@
+<h1>Editing</h1>
+
+<form action="/edit/{{trailer._id}}" method="POST">
+   <div class="title">
+      <label for="titulo">Titulo:</label>
+         <input type="text" autocomplete="off" id="titulo", name="titulo" placeholder="titulo"
+         value="{{trailer.titulo}}">
+   </div>
+   </div>
+
+   <div class="age">
+      <label for="año">Año:</label>
+         <input type="text" autocomplete="off" id="año" name="año" placeholder="año" value="{{trailer.año}}">
+   </div>
+
+   <div class="director">
+      <label for="director">Director:</label>
+         <input type="text" autocomplete="off" id="director" name="director" placeholder="director" value="{{trailer.director}}">
+   </div>
+
+   <div class="actors">
+      <label for="actores">Actores:</label>
+         <input type="text" autocomplete="off" id="actores" name="actores" placeholder="actores" value="{{trailer.actores}}">
+   </div>
+
+   <div class="reseña">
+      <label for="reseña">Reseña:</label>
+         <input type="text" autocomplete="off" id="reseña"  name="reseña" placeholder="reseñas" value="{{trailer.reseña}}">
+   </div>
+
+   <div class="imagen_de_portada">
+      <label for="imagen_de_portada">Imagen:</label>
+         <input type="text" autocomplete="off" id="imagen_de_portada" name="imagen_de_portada" placeholder="imagen" value="{{trailer.imagen_de_portada}}">
+   </div>
+
+   <div class="link_del_trailer">
+      <label for="link_del_trailer">Link del Trailer:</label>
+         <input type="text" autocomplete="off" id="link_del_trailer" name="link_del_trailer" 
+         placeholder="trailer" value="{{trailer.link_del_trailer}}">
+   </div>
+   <button>Update</button>
+
+</form>
